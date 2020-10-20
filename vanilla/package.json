@@ -2,7 +2,8 @@
   "name": "@salte-auth/examples-basic",
   "version": "1.0.0",
   "scripts": {
-    "start": "node server"
+    "start": "node server",
+    "parcel": "parcel -p 8081 index.html"
   },
   "dependencies": {
     "@salte-auth/auth0": "^3.0.0",

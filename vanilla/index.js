@@ -13,13 +13,13 @@ const auth = new SalteAuth({
     new Okta({
       url: 'https://dev-7822099.okta.com',
       clientID: '0oa8qcwsmjfxmV7OK5d5',
-      redirectUrl: 'http://localhost:8081',
+      redirectUrl: window.origin,
       scope: 'openid profile email',
     }),
     new Azure({
       url: 'https://login.microsoftonline.com/ed5bb696-a18c-4507-a0ec-5acdc9fa0f0a',
       clientID: 'cc57da3d-e7be-4bae-83d6-b4ce0808f146',
-      redirectUrl: 'http://localhost:8081',
+      redirectUrl: window.origin,
       scope: 'openid profile email',
     }),
   ],

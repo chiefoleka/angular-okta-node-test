@@ -3234,12 +3234,12 @@ var auth = new _salteAuth.SalteAuth({
   }), new _okta.Okta({
     url: 'https://dev-7822099.okta.com',
     clientID: '0oa8qcwsmjfxmV7OK5d5',
-    redirectUrl: 'http://localhost:8081',
+    redirectUrl: window.origin,
     scope: 'openid profile email'
   }), new _azure.Azure({
     url: 'https://login.microsoftonline.com/ed5bb696-a18c-4507-a0ec-5acdc9fa0f0a',
     clientID: 'cc57da3d-e7be-4bae-83d6-b4ce0808f146',
-    redirectUrl: 'http://localhost:8081',
+    redirectUrl: window.origin,
     scope: 'openid profile email'
   })],
   handlers: [new _redirect.Redirect({
@@ -3368,7 +3368,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "44447" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "42613" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
