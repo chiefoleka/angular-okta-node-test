@@ -2,7 +2,7 @@
   "name": "@salte-auth/examples-basic",
   "version": "1.0.0",
   "scripts": {
-    "start": "parcel -p 8081 index.html"
+    "start": "node server"
   },
   "dependencies": {
     "@salte-auth/auth0": "^3.0.0",
@@ -10,7 +10,9 @@
     "@salte-auth/okta": "^3.0.2",
     "@salte-auth/popup": "^3.0.0",
     "@salte-auth/redirect": "^3.0.2",
-    "@salte-auth/salte-auth": "^3.1.1"
+    "@salte-auth/salte-auth": "^3.1.1",
+    "body-parser": "^1.19.0",
+    "express": "^4.17.1"
   },
   "devDependencies": {
     "parcel": "^1.12.4"
