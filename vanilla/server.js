@@ -11,8 +11,8 @@ app.get('/', (req, res) => {
 })
 
 app.post('/webhook', (req, res) => {
-  console.log(req.body);
-  res.end('ok');
+  const response = req.headers['x-okta-verification-challenge'] || 'ok';
+  res.json({verification : response});
 })
 
 // Listen on port 8080
