@@ -11,7 +11,9 @@ app.get('/', (req, res) => {
 })
 
 app.post('/webhook', (req, res) => {
-  console.log(req.body)
+  const body = req.body.data || req.body;
+  console.log(JSON.stringify(body));
+
   const response = req.headers['x-okta-verification-challenge'] || 'ok';
   res.json({verification : response});
 })
